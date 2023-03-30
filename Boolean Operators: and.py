@@ -61,4 +61,4 @@ if not gpa >= 2.0:
   print("Your GPA is not high enough to graduate.")
 
 if not (credits >= 120) and not (gpa >= 2.0):
-  print("You do not meet either requirement to graduate!")
+  print("You do not meet either requirement to graduate!")kjk
