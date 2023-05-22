@@ -78,3 +78,43 @@ new_orders = ["lilac", "iris"]
 orders_combined = orders + new_orders
 
 broken_prices = [5, 3, 4, 5, 4] + [4]
+
+
+
+#Use square brackets ([ and ]) to select the 4th employee from the list employees. Save it to the variable employee_four.
+
+#Checkpoint 2 Passed
+
+#Stuck? Get a hint
+
+#2.Paste the following code into script.py:
+
+#print(employees[8])
+#What happens? Why?
+
+employees = ["Michael", "Dwight", "Jim", "Pam", "Ryan", "Andy", "Robert"]
+
+employee_four = employees[3]
+print(employees[4])
+
+
+#Create a variable called last_element.
+
+#Assign the last element in shopping_list to the variable last_element using a negative index.
+
+
+#2.Now select the element with index 5 and save it to the variable index5_element.
+
+#3.Use print to display both index5_element and last_element.
+
+#Note that they are equal to "cereal"!
+
+shopping_list = ["eggs", "butter", "milk", "cucumbers", "juice", "cereal"]
+
+last_element = shopping_list[-1]
+
+index5_element = shopping_list[5]
+
+print(last_element)
+
+print(index5_element)
