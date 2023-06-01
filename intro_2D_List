@@ -1,0 +1,192 @@
+#We want to have a way to store all of our classroom test score data.
+
+
+#Using the provided table, create a two-dimensional list called class_name_test to represent the data. Each sublist in class_name_test should have one student’s name and their associated score.
+
+#Name	Test Score
+#"Jenny"	90
+#"Alexus"	85.5
+#"Sam"	83
+#"Ellie"	101.5
+
+#Print class_name_test to see the result.
+
+#Checkpoint 2 Passed
+
+#2.
+#Use double square brackets ([][]) to select Sam‘s test score from the list class_name_test.
+
+#Save it to the variable sams_score.
+
+#Print the variable sams_score to see the result.
+
+#Checkpoint 3 Passed
+
+#3.
+#Use double square brackets ([][]) to select Ellies test score from the list class_name_test. This time only use negative indices!
+
+#Save it to the variable ellies_score.
+
+#Print the variable ellies_score to see the result.
+
+class_name_test = [["Jenny", 90], ["Alexus", 85.5],["Sam", 83],["Ellie", 101.5]]
+
+print(class_name_test)
+
+sams_score = class_name_test[2][1]
+
+print(sams_score)
+
+ellies_score = class_name_test[-1][-1]
+
+print(ellies_score)
+
+
+
+
+
+
+
+#Our school is expanding! We are welcoming a new set of students today from all over the world.
+
+#Using the provided table, create a two-dimensional list called incoming_class to represent the data. Each sublist in incoming_class should contain the name, nationality, and grade for a single student.
+
+#Name	Nationality	Grade Level
+#"Kenny"	"American"	9
+#"Tanya"	"Ukrainian"	9
+#"Madison"	"Indian"	7
+
+#Print incoming_class to see our list.
+
+
+#2.
+#"Madison" passed an exam to advance a grade. She will be pushed into 8th grade rather than her current 7th in our list.
+
+#Modify the list using double brackets [][] to make the change. Use positive indices.
+
+#Print incoming_class to see our change.
+
+
+#3.
+#"Kenny" likes to be called by his nickname "Ken". Modify the list using double brackets [][] to accommodate the change but only using negative indices.
+
+#Print incoming_class to see our change.
+
+incoming_class = [["Kenny", "American", 9], ["Tanya", "Ukrainian", 9], ["Madison", "Indian", 7]]
+
+print(incoming_class)
+
+incoming_class[2][2] = 8
+
+print(incoming_class)
+
+incoming_class[-3][-3] = "Ken"
+
+print(incoming_class)
+
+
+
+
+
+
+#Maria is entering customer data for her web store business. We’re going to help her organize her data.
+
+#Start by turning this list of customer first names into a list called first_names. Make sure to enter the names in this order:
+
+#Ainsley
+#Ben
+#Chani
+#Depak
+#Checkpoint 2 Passed
+
+#Stuck? Get a hint
+#2.
+#Maria wants to track all customer’s preferred sizes for her clothing. Create a list called preferred_size.
+
+#Fill our new list preferred_size with the following data, containing the preferred sizes for Ainsley, Ben, and Chani:
+
+#["Small", "Large", "Medium"]
+#Checkpoint 3 Passed
+
+#Stuck? Get a hint
+#3.
+#Oh no! We forgot to add Depak’s size.
+
+#Depak’s size is "Medium". Use .append() to add "Medium" to the preferred_size list.
+
+#Print preferred_size to see our change.
+
+#Checkpoint 4 Passed
+
+#Stuck? Get a hint
+#4.
+#Maria is having a hard time visualizing which customer is associated with each size. Let’s restructure our two lists into a two-dimensional list to help Maria.
+
+#In addition to our already available data, Maria is adding a third value for each customer that reflects if they want expedited shipping on their orders.
+
+#This will be reflected using a boolean value (True for expedited, False for regular)
+
+#Create a two-dimensional list called customer_data using the following table as a reference for the data. Each sublist should contain a name, size, and expedited shipping option for a single person.
+
+#Name	Size	Expedited Shipping
+#"Ainsley"	"Small"	True
+#"Ben"	"Large"	False
+#"Chani"	"Medium"	True
+#"Depak"	"Medium"	False
+
+#Print customer_data to see the data.
+
+#Checkpoint 5 Passed
+
+#Stuck? Get a hint
+#5.
+#"Chani" reached out to Maria. She requested to switch to regular shipping to save some money.
+
+#Change the data value for "Chani"‘s shipping preference to False in our two-dimensional list to reflect the change.
+
+#Checkpoint 6 Passed
+
+#Stuck? Get a hint
+#6.
+#"Ben" reached out to Maria asking to remove his shipping option because he is not sure what type he wants.
+
+#Use the .remove() method to delete the shipping value from the sublist that contains ben’s data.
+
+#Note: We never explicitly went over how to use the .remove() method on a 2d list together. If you feel like you are struggling, take a look at the hint for some guidance.
+
+#Checkpoint 7 Passed
+
+#Stuck? Get a hint
+#7.
+#Great job making it this far! One last thing, Maria received new customers, "Amit" and "Karim", the following 2d list contains their data:
+
+#[["Amit", "Large", True], ["Karim", "X-Large", False]]
+#Create a new variable customer_data_final. Combine our existing list customer_data with our new customer 2d list using + by adding it to the end of customer_data.
+
+#Print customer_data_final to see our final result.
+
+# Your code below: 
+
+# Checkpoint 1
+first_names = ["Ainsley", "Ben", "Chani", "Depak"]
+
+# Checkpoint 2
+preferred_size = ["Small", "Large", "Medium"]
+
+# Checkpoint 3
+preferred_size.append("Medium")
+print(preferred_size)
+
+# Checkpoint 4
+customer_data = [["Ainsley", "Small", True ], ["Ben", "Large", False ], ["Chani", "Medium", True ], ["Depak", "Medium", False ]]
+print(customer_data)
+
+# Checkpoint 5
+customer_data[2][2] = False
+
+# Checkpoint 6
+customer_data[1].remove(False)
+
+# Checkpoint 7
+customer_data_final = customer_data + [["Amit", "Large", True], ["Karim", "X-Large", False]]
+print(customer_data_final)
